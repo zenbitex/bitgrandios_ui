@@ -1,6 +1,6 @@
 window.onload = function(){ 
 
-$('.picture')[0].style.backgroundImage = `url("https://cryptodealexchange.in/img/${gon.market.ask_unit.toUpperCase()}.png")`
+$('.picture')[0].style.backgroundImage = `url("https://bitgrandios.com/img/${gon.market.ask_unit.toUpperCase()}.png")`
 
 setInterval(function(){
 let table = $(".order-book-ask tr");

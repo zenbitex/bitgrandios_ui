@@ -59,7 +59,7 @@
     @cleanMsg()
     @select('successSel').append(JST["templates/hint_order_success"]({msg: data.message})).show()
     @resetForm(event)
-    @order_book_url = "https://cryptodealexchange.in/api/v2/depth.json?market=#{gon.market.id}"
+    @order_book_url = "https://bitgrandios.com/api/v2/depth.json?market=#{gon.market.id}"
     setTimeout =>
       @updateOrderBook(@order_book_url)
     , 1000
@@ -67,7 +67,7 @@
     @enableSubmit()
 
   @updateOrderBook = (url) ->
-    $.getJSON "https://cryptodealexchange.in/markets/#{gon.market.id}.json", (market_data) =>
+    $.getJSON "https://bitgrandios.com/markets/#{gon.market.id}.json", (market_data) =>
       @trigger 'market::order_book::update', asks: market_data.gon_variables.asks, bids: market_data.gon_variables.bids
       gon.my_orders = market_data.gon_variables.my_orders
       @trigger 'order::wait::populate', orders: market_data.gon_variables.my_orders

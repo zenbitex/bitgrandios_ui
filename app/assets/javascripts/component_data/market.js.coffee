@@ -11,8 +11,8 @@
   @reqK = (market, minutes, limit = 768) ->
     tid = if gon.trades.length > 0 then gon.trades[0].tid else 0
     tid = @last_tid+1 if @last_tid
-    url = "https://cryptodealexchange.in/api/v2/k_with_pending_trades.json?market=#{market}&limit=#{limit}&period=#{minutes}&trade_id=#{tid}"
-    order_book_url = "https://cryptodealexchange.in/api/v2/depth.json?market=#{market}"
+    url = "https://bitgrandios.com/api/v2/k_with_pending_trades.json?market=#{market}&limit=#{limit}&period=#{minutes}&trade_id=#{tid}"
+    order_book_url = "https://bitgrandios.com/api/v2/depth.json?market=#{market}"
     $.getJSON url, (data) =>
       @handleData(data, minutes)
     $.getJSON order_book_url, (order_book_data) =>
