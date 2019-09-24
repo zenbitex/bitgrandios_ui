@@ -30,6 +30,7 @@
 #= require_tree ./component_ui
 #= require_tree ./templates
 
+#= require charting_library/charting_library.min
 #= require_self
 
 $ ->
