@@ -16,7 +16,7 @@ TradingView.onready(function() {
 			interval: '30',
 			theme: 'Dark',
 			container_id: 'trading_view_chart',
-			library_path: '/assets/charting_library/',
+			library_path: '/trading-ui/assets/charting_library/',
 			locale: getLanguageFromURL() || 'en',
 			disabled_features: ['use_localstorage_for_settings', 'left_toolbar', 'header_settings'],
 			enabled_features: ['study_templates'],
