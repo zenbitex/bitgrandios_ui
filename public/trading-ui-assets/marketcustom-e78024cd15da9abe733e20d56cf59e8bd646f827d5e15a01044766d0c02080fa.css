@@ -1,0 +1,2935 @@
+@font-face {
+  font-family: "GT-Walsheim-Pro-Regular";
+  src: url(/trading-ui-assets/GTWalsheimPro/GT-Walsheim-Pro-Regular-13f1d7cd3e17fcdda8c62098d59d4a1980d37107bceb7be39a291ff7f5116710.otf);
+}
+@font-face {
+  font-family: "GT-Walsheim-Pro-Medium";
+  src: url(/trading-ui-assets/GTWalsheimPro/GT-Walsheim-Pro-Medium-b63072c9e9276afd85f9ba112682d8604a98786c15b25068d8cabb3d874b4857.otf);
+}
+@font-face {
+  font-family: "GT-Walsheim-Pro-Bold";
+  src: url(/trading-ui-assets/GTWalsheimPro/GT-Walsheim-Pro-Bold-be9c700c6dda576c8838fa91159fa7b7af4e72b836a36ae4bfb76aeb9ce4abaf.otf);
+}
+@font-face {
+  font-family: "Karla-Bold";
+  src: url(/trading-ui-assets/Karla/Karla-Bold-6916f29111d92d1b90729c4e207b8f0a766ed1052301808e61ca8b83e994c1ba.ttf);
+}
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.theme--light {
+  --backgroundColor: #ccd8e5;
+  --formBackgroundColor: #e2eaf3;
+  --hoverFormBackgroundColor: #172030;
+  --tableHeaderColor: #eef2f8;
+  --textColor: #fff;
+  --darkerTextColor: #8796b2;
+  --formBackgroundHeader: #fff;
+  --titleColor: #F4CA18;
+  --formColumnValueColor: #27354e;
+  --btnBackgroundStandart: #e2eaf3;
+  --btnDarkBackground: #0b1c42;
+  --textDark: #27354e;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.theme--dark {
+  --backgroundColor: #151d2b;
+  --formBackgroundColor: #2c3a54;
+  --hoverFormBackgroundColor: #172030;
+  --tableHeaderColor: #212d43;
+  --textColor: #fff;
+  --darkerTextColor: #9fadc8;
+  --formBackgroundHeader: #1a2436;
+  --titleColor: #fff;
+  --formColumnValueColor: #fff;
+  --btnBackgroundStandart: #fff;
+  --btnDarkBackground: #9fadc8;
+  --textDark: #9fadc8;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--backgroundColor);
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: var(--backgroundColor);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+* {
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+h1, h2, h3, h4, h5, h6, h7 {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.flex-container {
+  display: flex;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.align--center {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.align--left {
+  text-align: left !important;
+  justify-content: flex-start !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.align--right {
+  text-align: right !important;
+  justify-content: flex-end !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.align--between {
+  justify-content: space-between;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.align--vertical {
+  vertical-align: middle;
+  align-items: center;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.align--justify {
+  text-align: justify;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.container {
+  width: 99%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1365.99px) {
+  /* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .container {
+    width: 98.7%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1049.99px) {
+  /* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .container {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.position--relative {
+  position: relative;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.height-100 {
+  height: 100%;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.shadow {
+  box-shadow: 0px 30px 60px 0px rgba(0, 8, 38, 0.4);
+  text-shadow: 0px 30px 60px rgba(0, 8, 38, 0.4);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.invisible {
+  display: none !important;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .invisible--mobile {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1049.99px) {
+  /* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .invisible--tablet {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1551px) {
+  /* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .invisible--desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1050px) and (max-width: 1365.99px) {
+  /* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .invisible--desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1550.99px) {
+  /* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .invisible--desktop {
+    display: none !important;
+  }
+}
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.btn {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 12px;
+  color: #27354e;
+  letter-spacing: 0.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 12px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: var(--btnBackgroundStandart);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.btn--blue {
+  background: #10da66;
+  color: #fff;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.btn--red {
+  background: #f31b3e;
+  color: #fff;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.btn--dark {
+  background: var(--btnDarkBackground);
+  color: var(--formBackgroundHeader);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.pointer {
+  cursor: pointer;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.title {
+  font-family: "GT-Walsheim-Pro-Medium";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.text--red {
+  color: #f31b3e !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.text--blue {
+  color: #187a18 !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.red-after:after {
+  content: '\2198';
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.red-before:before {
+  content: '\2198';
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.text--green {
+  color: #10da66 !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.text--sell {
+  color: #fa5252 !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.text--quantity {
+  color: #4f4677 !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.text--price {
+  color: #357ce1 !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.text--time {
+  color: #a5bdea !important;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.text--fee {
+  color: palevioletred;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.green-after:after {
+  content: '\2197';
+  font-weight: 700;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.green-before:before {
+  content: '\2198';
+  font-weight: 700;
+  font-size: 13px;
+  margin-right: 4px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon {
+  display: block;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-logo--light {
+  background-image: url(/trading-ui-assets/logo-light-d795328e16ca32c0ec158351d208717fdac7dd6bf3b77c5cfad66cc1ae5e0edc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 45px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-logo--dark {
+  background-image: url(/trading-ui-assets/logo-dark-d795328e16ca32c0ec158351d208717fdac7dd6bf3b77c5cfad66cc1ae5e0edc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 45px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon--night-mode {
+  background-image: url(/trading-ui-assets/dark-mode-855fe21a48b4e2c333b819d121762334493cff158e325795d5653d6559a2de75.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon--light-mode {
+  background-image: url(/trading-ui-assets/light-mode-313ec73d66ac93f58f223397f868a66e4c854c67f9ecfc3d7cab5571de7b76e7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-exchange {
+  background-image: url(/trading-ui-assets/exchange-af4767371c43ee29acc7db92814f7c4ac67fb5b6481f15d05a7173b958db2f16.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 12px;
+  height: 12px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-wallet {
+  background-image: url(/trading-ui-assets/wallet-icon-32c4960532017fbd4dde616bd7e819f41c869fcb8252be48a7502f02f7f1eebf.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 14px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-close {
+  background-image: url(/trading-ui-assets/close-icon-782063d2b5fced16f97a5cf769cc5ece7f1699e31a1dfd7e11b32f29ba2afffc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 12px;
+  height: 12px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-eye {
+  background-image: url(/trading-ui-assets/icon-eye-f02c9f81062fc1a92c8bba8bab172ff331ae8b165f44f23b96b11f022e3347a7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 12px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-eye--active {
+  background-image: url(/trading-ui-assets/icon-eye--active-f73b245d8a580a22e168dc06053affad1a91b520ed2498c9adcd50204f1941c0.png);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-expand {
+  background-image: url(/trading-ui-assets/icon-expand-2358ac45a761ec115ec343124b294b09ade4ada8905b2dc040b563983ec83366.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-expand--close {
+  background-image: url(/trading-ui-assets/icon-expand--close-9e7ab464b5b0e74c69a10e0b206326ae72f512c9bdef39757e436a028f1d7fc4.png);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-copy {
+  background-image: url(/trading-ui-assets/icon-copy-5c311727031805c0550b8e5e999197f5ca2f8089a7d40e1f7ca10c9b13e61170.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-QR {
+  background-image: url(/trading-ui-assets/icon-qr-5682e82f95d2b9a5fb9aad8e7588e490013b1c0c691bc29812d276df352d5813.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.icon-settings {
+  background-image: url(/trading-ui-assets/icon-settings-d29d72a3c3261df8ca957e4062abebbb4a6f8011763db5e4a0ffda0043911fa4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.custom-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.custom-dropdown--center .custom-dropdown__list {
+  text-align: center;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.custom-dropdown__info {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: #27354e;
+  position: relative;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.custom-dropdown__info:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -15px;
+  top: 30%;
+  width: 6px;
+  height: 6px;
+  border: solid #27354e;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.custom-dropdown__list {
+  position: absolute;
+  top: 115%;
+  right: -18px;
+  width: auto;
+  background: #fff;
+  padding: 0 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s linear;
+  z-index: 10;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .custom-dropdown__list {
+    top: 117%;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.custom-dropdown__list--open {
+  max-height: 147px;
+  padding: 11px 15px;
+  overflow-y: scroll;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.custom-dropdown__list--hide {
+  box-shadow: none;
+  border: none;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.custom-dropdown__item {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: #27354e;
+  margin-bottom: 7px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.custom-dropdown__item:last-child {
+  margin-bottom: 0;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  user-select: none;
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.radio-container input:checked ~ .checkmark {
+  background-color: #0134ff;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.radio-container .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.radio-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: var(--formBackgroundColor);
+  border-radius: 50%;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.radio-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 23px;
+  cursor: pointer;
+  user-select: none;
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--textDark);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.checkbox-container__text--bold {
+  font-family: "GT-Walsheim-Pro-Bold";
+  font-weight: normal;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* line 1, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-menu {
+  display: flex;
+  align-items: center;
+}
+
+/* line 2, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.depths {
+  background: var(--formBackgroundColor);
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+/* line 3, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.depths__header {
+  background: var(--formBackgroundHeader);
+  padding: 10px 16px;
+}
+
+/* line 4, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.depths .highcharts-grid {
+  display: none;
+}
+
+/* line 7, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.depths__header .highcharts-grid {
+  display: none;
+}
+
+/* line 10, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-menu__items {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 17, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-menu__item {
+  margin-right: 14.5px;
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 26, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-menu__item:last-child {
+  margin-right: 0;
+}
+
+/* line 29, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-menu__item--active {
+  position: relative;
+  color: var(--titleColor);
+}
+
+/* line 33, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-menu__item--active:after {
+  content: '';
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: #0134ff;
+}
+
+/* line 43, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-menu__item--capitalize {
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .select-menu--invisible-mobile {
+    display: none;
+  }
+}
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-dropdown-menu {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  display: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .select-dropdown-menu {
+    display: block;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .select-dropdown-menu--invisible-mobile {
+    display: none;
+  }
+}
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-dropdown-menu__info {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-dropdown-menu__info:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -11px;
+  top: 15%;
+  width: 4px;
+  height: 4px;
+  border: solid var(--darkerTextColor);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-dropdown-menu__list {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: -10px;
+  width: auto;
+  background: #fff;
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s linear;
+  z-index: 10;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-dropdown-menu__list--open {
+  max-height: 147px;
+  padding: 5px 10px;
+  overflow-y: scroll;
+  border: 1px solid #a8b5cd;
+  border-radius: 4px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-dropdown-menu__list--hide {
+  box-shadow: none;
+  border: none;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-dropdown-menu__list-item {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-dropdown-menu__list-item:last-child {
+  margin-bottom: 0;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.select-dropdown-menu__list-item--capitalize {
+  text-transform: capitalize;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block--half {
+  width: 48%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block--light .input-block__field {
+  border: 1px solid var(--formBackgroundColor);
+  background: transparent;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block--light .input-block__error-message {
+  display: block;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block--error .input-block__field {
+  border: 1px solid #f31b3e;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__title {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 11px;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__title--big {
+  font-size: 13px;
+  min-height: 15px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__error-message {
+  display: none;
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: #f31b3e;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__field {
+  display: flex;
+  align-items: center;
+  background: var(--formBackgroundColor);
+  padding: 11px 17px 12px 13px;
+  margin-top: 5px;
+  min-height: 37px;
+  position: relative;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__field--fake {
+  padding: 4px 17px 6px 16px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__input {
+  width: 80%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__fake-input {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: #27354e;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__copy-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  font-size: 13px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__post-mark {
+  width: 20%;
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 34%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.input-block__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 140px;
+  height: 100%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.tips__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+  padding: 0 24px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.tips__title {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 13px;
+  color: #27354e;
+  text-transform: uppercase;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.tips__expand-icon {
+  cursor: pointer;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.tips__body {
+  background: #eef2f8;
+  width: 100%;
+  padding: 13px 24px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.tips__text {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: #27354e;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.step-menu {
+  background: #eef2f8;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.step-menu__item {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 13px;
+  color: #27354e;
+  position: relative;
+  width: 33%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.step-menu__item:after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 15%;
+  border: solid #a8b5cd;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(-45deg);
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.step-menu__item:last-child:after {
+  display: none;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.step-menu__item--active {
+  color: #0134ff;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__module {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__form {
+  width: 460px;
+  height: auto;
+  background: var(--formBackgroundHeader);
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .popup__form {
+    width: 300px;
+  }
+}
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__header {
+  padding: 15px 16px 13px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--formBackgroundColor);
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__close-icon {
+  cursor: pointer;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__banner {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 18px;
+  color: var(--titleColor);
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__body {
+  padding: 21px 16px 24px 16px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__title {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 13px;
+  color: #27354e;
+  text-transform: uppercase;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__description {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: #a8b5cd;
+  margin-top: 3px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__btn-container--to-left {
+  justify-content: flex-start;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__btn {
+  min-width: 120px;
+  height: 36px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__row {
+  margin-bottom: 20px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__input-field {
+  padding: 5px 17px 6px 7px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.popup__text {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--titleColor);
+  line-height: 19px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.fake-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eef2f8;
+  width: 100%;
+  height: 36px;
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 16px;
+  color: #27354e;
+  margin-top: 14px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__body {
+  padding: 22px 24px 24px 24px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__input-field {
+  padding: 7px 17px 6px 13px;
+  position: relative;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__tips {
+  margin: 23px -24px 17px -24px;
+  display: block;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__btn {
+  font-size: 13px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.keystore-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.keystore-select__text {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 13px;
+  color: #a8b5cd;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.keystore-select__btn {
+  height: 36px;
+  width: 160px;
+  font-size: 13px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 14px 15px 15px;
+  border-bottom: 1px solid var(--formBackgroundColor);
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto__info-container {
+  display: flex;
+  align-items: center;
+  width: 59%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto__symbol-container {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto__icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto__name {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+  margin-left: 8px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto__symbol {
+  font-family: "GT-Walsheim-Pro-Medium";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--textDark);
+  margin-left: 4px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto__value-container {
+  width: 21%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto__value {
+  font-family: "GT-Walsheim-Pro-Medium";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+  margin-left: 4px;
+  text-indent: -1px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto__price-container {
+  width: 20%;
+  text-align: right;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.crypto__price {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.sign-up__checkbox-container {
+  margin-top: 23px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.sign-up__manage-row {
+  margin-top: 24px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.sign-up__btn {
+  margin: 0 8px;
+  width: 160px;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.login__settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.login__forgot-pass {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 13px;
+  color: var(--textDark);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__delimiter {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background: var(--formBackgroundColor);
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--firstname {
+  width: 48%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--lastname {
+  width: 48%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--month {
+  width: 40%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--date {
+  width: 25%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--year {
+  width: 25%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--street {
+  width: 65%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--city {
+  width: 30%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--country {
+  width: 30%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--state {
+  width: 30%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.identity__block--postal-code {
+  width: 30%;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.plan-list {
+  position: relative;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.plan-list:after {
+  content: '';
+  background: var(--tableHeaderColor);
+  width: 1px;
+  height: 235px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.plan-list__item {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  margin-left: -11px;
+  z-index: 10;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.plan-list__item-circle {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #0134ff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* line 47, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.plan-list__item-text {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--titleColor);
+  text-indent: 7px;
+  padding-top: 4px;
+  display: inline-block;
+}
+
+/* line 48, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form {
+  background: var(--formBackgroundColor);
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+/* line 49, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__header {
+  background: var(--formBackgroundHeader);
+  padding: 10px 16px;
+}
+
+/* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__body {
+  background: var(--formBackgroundColor);
+  padding: 10px 16px;
+}
+
+/* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__column-container {
+  display: flex;
+  align-items: center;
+  padding: 9px 0;
+  background: var(--formBackgroundColor);
+}
+
+/* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__column-container-value {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--formBackgroundColor);
+  background: var(--formBackgroundHeader);
+}
+
+/* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__column {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__column-value {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 11px;
+  color: var(--formColumnValueColor);
+  text-align: center;
+}
+
+/* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.exchange__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  height: 100%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .exchange__container {
+    flex-direction: column;
+    height: auto;
+  }
+}
+/* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.exchange__trading-form {
+  min-height: 102px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .exchange__trading-form {
+    min-height: auto;
+  }
+}
+/* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.exchange__chart-component {
+  min-height: 380px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 50, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .exchange__chart-component {
+    min-height: auto;
+  }
+}
+/* line 51, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.exchange__order-list {
+  overflow: auto;
+  max-height: 410px;
+  height: calc(100% - 482px);
+  min-height: 410px;
+  background: var(--formBackgroundHeader);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 58, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .exchange__order-list {
+    min-height: auto;
+    height: 350px;
+  }
+}
+/* line 58, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.exchange__order-book {
+  height: 34.3%;
+  min-height: 241px;
+  background: var(--formBackgroundHeader);
+  max-height: 600px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 58, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .exchange__order-book {
+    min-height: auto;
+    height: 350px;
+  }
+}
+/* line 59, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.exchange__order-history {
+  min-height: 90px;
+  max-height: 240px;
+  background: var(--formBackgroundHeader);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .exchange__order-history {
+    min-height: auto;
+    height: 350px;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.exchange__buy-sell {
+  height: 32%;
+  min-height: 275px;
+  background: var(--formBackgroundHeader);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .exchange__buy-sell {
+    min-height: auto;
+    height: auto;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.side--left {
+  width: calc(100% - 608px);
+  height: 100%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .side--left {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1049.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .side--left {
+    width: 62%;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.side--right {
+  width: 600px;
+  height: 100%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .side--right {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1049.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .side--right {
+    width: 36%;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.body-container {
+  height: calc(100vh - 48px);
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header {
+  background-color: var(--formBackgroundHeader);
+  z-index: 1000;
+  position: relative;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  padding: 0 20px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__manage-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__mode-icon {
+  margin: 0 -4px 0 16px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__wallet {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--darkerTextColor);
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__unlock-btn {
+  margin-left: 8px;
+  position: relative;
+  cursor: pointer;
+  padding-right: 29px;
+  padding-left: 16px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__unlock-btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 18px;
+  top: 38%;
+  width: 4px;
+  height: 4px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__dropdown-background {
+  content: '';
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__dropdown-background--visible {
+  display: block;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 140px;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s linear;
+  padding: 0;
+  z-index: 10;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__dropdown--open {
+  max-height: 100px;
+  overflow-y: hidden;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__dropdown--hide {
+  box-shadow: none;
+  border: none;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__dropdown-item {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+  background: var(--formBackgroundHeader);
+  padding: 8px 0 7px 0;
+  border-bottom: 1px solid var(--formBackgroundColor);
+  text-transform: none;
+  text-align: center;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__btn {
+  margin-left: 9px;
+  padding: 9px 12px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__btn--signUp {
+  padding: 9px 16px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__btn--login {
+  padding: 9px 22px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__delimiter {
+  background: var(--formBackgroundColor);
+  width: 1px;
+  height: 36px;
+  border: none;
+  margin: 0 16px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__delimiter:last-child {
+  margin-right: 0;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__icon-copy {
+  margin: 0 16px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.exchange__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .exchange__container {
+    flex-direction: column;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.side {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.side--left {
+  width: calc(100% - 608px);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .side--left {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1049.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .side--left {
+    width: 62%;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.side--right {
+  width: 600px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .side--right {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1049.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .side--right {
+    width: 36%;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form {
+  background: var(--formBackgroundColor);
+  margin-bottom: 8px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__header {
+  background: var(--formBackgroundHeader);
+  padding: 10px 16px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__body {
+  background: var(--formBackgroundColor);
+  padding: 10px 16px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__column-container {
+  display: flex;
+  align-items: center;
+  padding: 9px 0;
+  background: var(--tableHeaderColor);
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__column-container-value {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--formBackgroundColor);
+  background: var(--formBackgroundHeader);
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__column {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.form__column-value {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 11px;
+  color: var(--formColumnValueColor);
+  text-align: center;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__select-item {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0 12px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__select-item:last-child {
+  margin-right: 7px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.header__select-item:after {
+  bottom: -16px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .trading-product {
+    display: block;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__column {
+  width: 25%;
+  padding-top: 7px;
+  padding-bottom: 6px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .trading-product__column {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__column--market {
+  width: 25.6%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .trading-product__column--market {
+    width: 49%;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__column--trade-price {
+  width: 25.5%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .trading-product__column--trade-price {
+    width: 49%;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__column--24h-price {
+  width: 25.6%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .trading-product__column--24h-price {
+    width: 49%;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__column--24h-volume {
+  width: 23%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .trading-product__column--24h-volume {
+    width: 49%;
+  }
+}
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__title-container {
+  display: flex;
+  align-items: center;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__body-container {
+  padding-top: 4px;
+  position: relative;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__title {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+  text-transform: uppercase;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__title--extra {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 11px;
+  color: var(--titleColor);
+  text-transform: uppercase;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__icon-exchange {
+  margin: 0 3px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__extra-info {
+  margin-left: 3px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__value {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 11px;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__market {
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-product__market:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -11px;
+  top: 15%;
+  width: 4px;
+  height: 4px;
+  border: solid var(--darkerTextColor);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 360px;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s linear;
+  padding: 0;
+  z-index: 10;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown--open {
+  max-height: 240px;
+  overflow-y: hidden;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown--open .trading-dropdown__backround {
+  display: block;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown--hide {
+  box-shadow: none;
+  border: none;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__column {
+  width: 33%;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__column:first-child {
+  width: 50%;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__column:nth-child(2) {
+  width: 25%;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__column:last-child {
+  width: 25%;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__column-value {
+  font-size: 14px;
+  color: var(--formColumnValueColor);
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__column-value:first-child {
+  text-align: left;
+  text-indent: 15px;
+}
+
+/* line 60, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__backround {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* line 62, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__main-block {
+  z-index: 20;
+  position: relative;
+  color: inherit;
+}
+
+/* line 63, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__row {
+  padding: 8px 0 7px 0;
+  display: none;
+}
+
+/* line 64, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.show {
+  display: block;
+}
+
+/* line 67, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.trading-dropdown__form-container {
+  height: 205px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+/* line 67, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.charts-settings__body {
+  padding: 0;
+  background: #fff;
+}
+
+/* line 67, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.charts-settings__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 16px;
+  background: var(--formBackgroundColor);
+}
+
+/* line 67, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.charts-settings__chart-container {
+  width: 100%;
+  height: 450px;
+  background: var(--formBackgroundHeader);
+}
+
+/* line 67, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-list__header {
+  display: flex;
+  justify-content: space-between;
+  height: 36px;
+}
+
+/* line 67, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-list__body {
+  padding: 0;
+  min-height: 242px;
+  height: calc(100% - 36px);
+}
+
+/* line 68, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-list__order-form-container {
+  overflow: auto;
+  width: 100%;
+  min-height: 210px;
+}
+
+/* line 73, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-list__column-container {
+  padding: 9px 0;
+}
+
+/* line 73, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-list__column {
+  width: 20%;
+}
+
+/* line 73, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.type {
+  width: 10%;
+}
+
+/* line 73, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.fee {
+  width: 30%;
+}
+
+/* line 73, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-list__column-value {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 11px;
+}
+
+/* line 73, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book__column {
+  width: 50%;
+}
+
+/* line 73, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book__column-wide {
+  width: 48%;
+}
+
+/* line 73, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book__column-small {
+  width: 4%;
+}
+
+/* line 74, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book__body {
+  padding: 0;
+  height: 500px;
+  display: flex;
+}
+
+/* line 74, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book__column-container {
+  padding: 9px 0 10px 0;
+}
+
+/* line 74, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book__order-form-container {
+  min-height: 138px;
+  width: 100%;
+}
+
+/* line 75, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order_book_header {
+  max-height: 100%;
+  overflow: auto;
+}
+
+/* line 75, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book__settings-row {
+  justify-content: space-between;
+  align-items: center;
+  background: var(--formBackgroundColor);
+  padding: 8px 16px;
+  text-align: center;
+  border-bottom: 1px solid var(--backgroundColor);
+}
+
+/* line 75, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book__title {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+  text-transform: uppercase;
+}
+
+/* line 75, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-history__body {
+  padding: 0;
+  height: calc(100% - 36px);
+}
+
+/* line 75, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-history__column {
+  width: 32.5%;
+}
+
+/* line 75, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-history__column-container {
+  padding: 9px 0 10px 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-history__order-form-container {
+  max-height: 138px;
+  width: 100%;
+  height: calc(100% - 33px);
+  overflow: auto;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__body {
+  padding: 16px 16px;
+  background: var(--formBackgroundHeader);
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--formBackgroundColor);
+  padding: 8px 16px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__wallet-container {
+  display: flex;
+  align-items: center;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__wallet-icon {
+  margin-right: 9px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__settings-text {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+  text-transform: uppercase;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__settings-text--main {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--darkerTextColor);
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__settings-text--extra {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 11px;
+  margin-left: 3px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__radio-button-container {
+  display: flex;
+  align-items: center;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__radion-button {
+  margin-right: 30px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__input-block-container {
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__btn-block {
+  margin-top: 13px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__btn-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__btn-title {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--darkerTextColor);
+  text-transform: uppercase;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__btn-mark {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--titleColor);
+  text-transform: uppercase;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__btn-mark--extra {
+  font-family: "Karla-Bold";
+  font-weight: normal;
+  font-size: 11px;
+  color: var(--titleColor);
+  margin-left: 3px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.buy-sell__btn {
+  width: 100%;
+  margin-top: 13px;
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet {
+  height: 100%;
+  background: transparent;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__container {
+  display: flex;
+  height: calc(100% - 37px);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .wallet__container {
+    height: auto;
+    flex-direction: column;
+  }
+}
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__header {
+  border-bottom: 1px solid var(--formBackgroundColor);
+  margin-top: 8px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__side {
+  background: var(--formBackgroundHeader);
+  height: 100%;
+  overflow-y: scroll;
+  min-height: 500px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__side--left {
+  width: 33.7%;
+  border-right: 1px solid var(--formBackgroundColor);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .wallet__side--left {
+    width: 100%;
+    border-right: none;
+    max-height: 500px;
+    overflow-y: scroll;
+    margin-bottom: 12px;
+  }
+}
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__side--right {
+  width: 66.3%;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 767.99px) {
+  /* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+  .wallet__side--right {
+    width: 100%;
+  }
+}
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet .select-menu-container {
+  padding-left: 16px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__column-container {
+  background: var(--formBackgroundColor);
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__column-container .select-menu__item {
+  margin-right: 24px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__body {
+  padding: 22px 17px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet .plan-list {
+  margin-top: 10px;
+  margin-left: 11px;
+  height: 250px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet .plan-list:after {
+  height: 235px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet .plan-list__item:nth-child(1) {
+  top: 0px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet .plan-list__item:nth-child(2) {
+  top: 64px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet .plan-list__item:nth-child(3) {
+  top: 221px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history {
+  margin-top: 73px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column-container {
+  padding-left: 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column, .wallet__deposit-history .wallet__column-value {
+  width: 16%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column:nth-child(1), .wallet__deposit-history .wallet__column-value:nth-child(1) {
+  width: 26.6%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column:nth-child(2), .wallet__deposit-history .wallet__column-value:nth-child(2) {
+  width: 13.4%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column:nth-child(3), .wallet__deposit-history .wallet__column-value:nth-child(3) {
+  width: 10.5%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column:nth-child(4), .wallet__deposit-history .wallet__column-value:nth-child(4) {
+  width: 21.7%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column:nth-child(5), .wallet__deposit-history .wallet__column-value:nth-child(5) {
+  width: 13%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column:nth-child(6), .wallet__deposit-history .wallet__column-value:nth-child(6) {
+  width: 15%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column-container-value {
+  padding: 10px 0 9px 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column-value {
+  width: 16%;
+  font-size: 13px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__deposit-history .wallet__column-value:nth-child(6) {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 22px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history {
+  margin-top: 78px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column-container {
+  padding-left: 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column, .wallet__withdraw-history .wallet__column-value {
+  width: 10%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column:nth-child(1), .wallet__withdraw-history .wallet__column-value:nth-child(1) {
+  width: 21.2%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column:nth-child(2), .wallet__withdraw-history .wallet__column-value:nth-child(2) {
+  width: 10.8%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column:nth-child(3), .wallet__withdraw-history .wallet__column-value:nth-child(3) {
+  width: 31.9%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column:nth-child(4), .wallet__withdraw-history .wallet__column-value:nth-child(4) {
+  width: 16%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column:nth-child(5), .wallet__withdraw-history .wallet__column-value:nth-child(5) {
+  width: 9.8%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column:nth-child(6), .wallet__withdraw-history .wallet__column-value:nth-child(6) {
+  width: 10.3%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column-container-value {
+  padding: 13px 0 12px 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__withdraw-table-address {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-indent: 10px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw-history .wallet__column-value {
+  font-size: 13px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__title {
+  font-size: 16px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__table {
+  margin-top: 13px;
+  border: 1px solid var(--formBackgroundColor);
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__receipt-btn {
+  width: 64px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__text {
+  font-family: "GT-Walsheim-Pro-Regular";
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--titleColor);
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__withdraw {
+  padding: 30px 17px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__input-block {
+  margin: 18px 0 20px 0;
+  width: 64%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__submit-btn {
+  width: 160px;
+  margin-top: 23px;
+  height: 36px;
+  font-size: 13px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__plan-address {
+  position: absolute;
+  top: 106px;
+  left: 53px;
+  width: 65%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__input-copy-icon {
+  position: absolute;
+  top: 9px;
+  right: 48px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.wallet__input-QR-icon {
+  position: absolute;
+  top: 9px;
+  right: 16px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history {
+  height: 100%;
+  min-height: 400px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__form {
+  height: 100%;
+  background: transparent;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__body {
+  height: calc(100% - 36px);
+  background: transparent;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__header {
+  background: var(--formBackgroundHeader);
+  margin-top: 8px;
+  padding-right: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history .select-menu__item {
+  margin-right: 23.5px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history .select-menu__item:last-child {
+  margin-right: 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history .select-menu__item:after {
+  bottom: -12px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__form-container {
+  height: calc(100% - 32px);
+  overflow-y: scroll;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__column {
+  width: 20%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__column-container-value {
+  padding: 12px 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__column-value {
+  width: 20%;
+  font-size: 13px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column {
+  width: 20%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column:nth-child(1) {
+  width: 10%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column:nth-child(2) {
+  width: 17%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column:nth-child(3) {
+  width: 10%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column:nth-child(4) {
+  width: 10.5%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column:nth-child(5) {
+  width: 8%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column:nth-child(6) {
+  width: 44.5%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column-container-value {
+  padding: 12px 0;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column-value {
+  width: 20%;
+  font-size: 13px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column-value:nth-child(1) {
+  width: 10%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column-value:nth-child(2) {
+  width: 17%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column-value:nth-child(3) {
+  width: 10%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column-value:nth-child(4) {
+  width: 10.5%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column-value:nth-child(5) {
+  width: 8%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.history__account .history__column-value:nth-child(6) {
+  width: 44.5%;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book-bid * {
+  color: #10da66 !important;
+  font-weight: bold;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+.order-book-ask * {
+  color: #fa5252 !important;
+  font-weight: bold;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* line 76, /home/joshua/work/bitgandios/bitgrandios_ui/app/assets/stylesheets/marketcustom.css.scss */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

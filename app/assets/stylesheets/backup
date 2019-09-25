@@ -26,7 +26,7 @@
   --textColor: #fff;
   --darkerTextColor: #8796b2;
   --formBackgroundHeader: #fff;
-  --titleColor: #27354e;
+  --titleColor: #F4CA18;
   --formColumnValueColor: #27354e;
   --btnBackgroundStandart: #e2eaf3;
   --btnDarkBackground: #0b1c42;
