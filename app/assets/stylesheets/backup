@@ -258,7 +258,7 @@ h7 {
   display: block;
 }
 .icon-logo--light {
-  background-image: image-url("logo-light.png");/*url(assets/images/logo-light.png);*/
+  background-image: image-url("bitgradios.png");/*url(assets/images/bitgradios.png);*/
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -266,7 +266,7 @@ h7 {
   height: 45px;
 }
 .icon-logo--dark {
-  background-image: image-url("logo-dark.png"); /*url(assets/images/logo-dark.png);*/
+  background-image: image-url("bitgradios.png"); /*url(assets/images/bitgradios.png);*/
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
