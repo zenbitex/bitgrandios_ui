@@ -48,9 +48,9 @@
       <div class="form__body trading-product">
         <div class="trading-product__column trading-product__column--market ">
           <div class="trading-product__title-container">
-              <p class="trading-product__title"><%= @data.fetch(:current_market).fetch(:ask_unit).upcase %> </p>
+              <p class="trading-product__title" style="color: #F4CA18 !important"><%= @data.fetch(:current_market).fetch(:ask_unit).upcase %> </p>
               <i class="icon icon-exchange trading-product__icon-exchange"></i>
-              <p class="trading-product__title"><%= @data.fetch(:current_market).fetch(:bid_unit).upcase %></p>
+              <p class="trading-product__title" style="color: #F4CA18 !important"><%= @data.fetch(:current_market).fetch(:bid_unit).upcase %></p>
           </div>
           <div class="trading-product__body-container">
             <p onclick="toggleAssetInfo()" class="trading-product__value">
@@ -91,7 +91,7 @@
           <div class="trading-product__title-container">
               <% @data.fetch(:markets).each do |market| %>
                   <% if market.fetch(:id) == @data.fetch(:current_market).fetch(:id) %>
-                  <p class="trading-product__title"><%= market.fetch(:ticker).fetch(:last) %><span class="trading-product__title--extra trading-product__extra-info"><%= @data.fetch(:current_market).fetch(:bid_unit) %></span></p>
+                  <p class="trading-product__title" style="color: #F4CA18 !important"><%= market.fetch(:ticker).fetch(:last) %><span class="trading-product__title--extra trading-product__extra-info" style="color: #F4CA18 !important"><%= @data.fetch(:current_market).fetch(:bid_unit) %></span></p>
                   <% break %>
                   <% end %>
               <% end %>
@@ -105,7 +105,7 @@
           <div class="trading-product__title-container">
               <% @data.fetch(:markets).each do |market| %>
                   <% if market.fetch(:id) == @data.fetch(:current_market).fetch(:id) %>
-                  <p class="trading-product__title red-after change">0.00%</p>
+                  <p class="trading-product__title red-after change" style="color: #F4CA18 !important">0.00%</p>
                   <% break %>
                   <% end %>
               <% end %>
@@ -118,7 +118,7 @@
           <div class="trading-product__title-container">
             <% @data.fetch(:markets).each do |market| %>
                 <% if market.fetch(:id) == @data.fetch(:current_market).fetch(:id) %>
-                    <p class="trading-product__title"><%= market.fetch(:ticker).fetch(:volume) %><span class="trading-product__title--extra trading-product__extra-info"><%= @data.fetch(:current_market).fetch(:ask_unit) %></span></p>
+                    <p class="trading-product__title" style="color: #F4CA18 !important"><%= market.fetch(:ticker).fetch(:volume) %><span class="trading-product__title--extra trading-product__extra-info" style="color: #F4CA18 !important"><%= @data.fetch(:current_market).fetch(:ask_unit) %></span></p>
                     <% break %>
                 <% end %>
             <% end %>
